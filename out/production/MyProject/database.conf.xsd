@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- 元素声明部分和属性声明部分(命名空间的声明)-->
+  <!-- xmlns:命名空间属性名 prefix:命名空间的前缀 URI:统一资源标识符-->
+  <xs:element name="datasource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="driver" type="xs:string"/>
+        <xs:element name="url" type="xs:string"/>
+        <xs:element name="user" type="xs:string"/>
+        <xs:element name="password" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
